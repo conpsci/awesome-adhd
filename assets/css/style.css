@@ -3,7 +3,7 @@
 
 @import "{{ site.theme }}";
 
-// Dark mode overrides
+
 body {
   background-color: var(--primary-color);
   color: var(--text-color);
@@ -33,4 +33,35 @@ code {
 
 .site-footer {
   border-top: solid 1px var(--text-color);
+}
+
+.dataTables_wrapper {
+  font-size: 14px;
+}
+
+.datatable {
+  width: 100% !important;
+  margin-bottom: 20px;
+}
+
+.datatable th, .datatable td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.datatable th {
+  background-color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.dataTables_filter {
+  margin-bottom: 10px;
+}
+
+.dataTables_filter input {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  padding: 5px;
 }
